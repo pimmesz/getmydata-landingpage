@@ -31,6 +31,11 @@
 
       <%= f.submit "Submit", class: 'formbtn' %>
       <% end %>
+      <% flash.each do |key, value| %>
+      <div class="<%= flash_class(key) %> text-center">
+        <%= value %>
+      </div>
+      <% end %>
     </div>
   </div>
 </div>
