@@ -5,8 +5,11 @@ class EmailsController < ApplicationController
 
   def create
     @email = Email.new(email_params)
-    @email.save
-    redirect_to root_path
+    if @email.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   private
