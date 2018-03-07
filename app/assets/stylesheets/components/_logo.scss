@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 900px) {
   .logo {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: calc(50% - 80px);
     z-index: 10;
