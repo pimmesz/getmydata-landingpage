@@ -1,10 +1,12 @@
 <div class="flexcontainer">
-
+  <div class="flexitem imgbox">
+    <%=image_tag('http://www.campie.nl/wp-content/uploads/2018/03/Getmydata_logo_white.png', :class => "logo") %>
+  </div>
   <div class="flexitem textbox">
     <h1>What do they know about me?</h1>
   </div>
   <div class="flexitem textbox">
-    <h3>Have you always wondered what companies know about you? <br>We at <strong>GetMyData</strong> help you find out!</h3>
+    <h3>Have you always wondered what organizations know about you? <br>We at <strong>GetMyData</strong> help you find out! <br><br> Leave your email below and be notified when you can request your data from organizations.</h3>
   </div>
 
   <div class="form">
@@ -19,11 +21,6 @@
         </ul>
       </div>
       <% end %>
-      <div class="form-group">
-        <%= f.label :name %>
-        <%= f.text_field :name, class: 'form-control' %>
-      </div>
-
       <div class="form-group">
         <%= f.label :email %>
         <%= f.text_field :email, class: 'form-control' %>
